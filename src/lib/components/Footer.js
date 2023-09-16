@@ -74,6 +74,12 @@ const Feature = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 1100px) {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
   }
 
   @media (max-width: 991px) {
@@ -85,7 +91,10 @@ const Feature = styled.div`
 
 const Secondary = styled.div`
   background-color: #212121;
+  border-top: 2px solid #b60000;
+  border-bottom: 2px solid #b60000;
   color: #fff;
+  height: 100%;
   width: 100%;
   margin: auto;
   padding: 12px;
@@ -99,6 +108,16 @@ const Secondary = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
+
+    @media (max-width: 1100px) {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      div {
+        width: 100%;
+      }
+    }
   }
 
   @media (max-width: 991px) {
@@ -142,7 +161,7 @@ const App = (props) => {
                 </p>
               </div>
               <div>
-                <img src={Image} alt="" srcset="" />
+                <img src={Image} alt="" srcset="" style={{ width: "100%" }} />
               </div>
             </div>
           </Container>
@@ -185,9 +204,18 @@ const App = (props) => {
                 <h3 className="header">Social Media</h3>
                 <hr />
                 <ul>
-                  <li>Active</li>
-                  <li>Link</li>
-                  <li>Link</li>
+                  <li>
+                    <a href="#">Instagram</a>
+                  </li>
+                  <li>
+                    <a href="#">Twitter</a>
+                  </li>
+                  <li>
+                    <a href="#">Facebook</a>
+                  </li>
+                  <li>
+                    <a href="#">YouTube</a>
+                  </li>
                 </ul>
               </div>
               <div>
