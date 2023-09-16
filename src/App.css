@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+/* Custom CSS */
+/* main {
+  position: relative;
+  z-index: 2;
+  background: #f56469;
+  height: 100vh;
+  margin-bottom: 350px;
+  box-shadow: 3px 2px 2px 0px rgba(51, 51, 51, 0.5);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  min-height: 350px;
+  padding-left: 50px;
+  background: #4b466f;
+  font-size: 100px;
+  color: #f56469;
+} */
